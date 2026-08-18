@@ -1,0 +1,31 @@
+{
+  "name": "allreds-playwright-automation",
+  "version": "1.0.0",
+  "description": "Safe end-to-end UI automation portfolio for the Allred's B2B website.",
+  "private": false,
+  "scripts": {
+    "test": "playwright test",
+    "test:public": "playwright test --grep-invert @authenticated",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report"
+  },
+  "keywords": [
+    "playwright",
+    "javascript",
+    "qa",
+    "test-automation",
+    "end-to-end-testing",
+    "page-object-model"
+  ],
+  "author": "Abidur Rahman Sourov",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "dotenv": "^17.2.1"
+  }
+}
